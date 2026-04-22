@@ -1,12 +1,12 @@
 # 2-Bit Flash ADC – Behavior Analysis
 
-## 🔷 Overview
+## Overview
 
 A **2-bit Analog-to-Digital Converter (ADC)** converts a continuous analog input voltage into one of **four discrete digital levels**. This design uses a **flash ADC architecture**, which employs multiple comparators operating in parallel for fast conversion.
 
 ---
 
-## 🔷 Circuit Behavior
+## Circuit Behavior
 
 ### 1. Input and Reference Levels
 
@@ -67,7 +67,7 @@ The thermometer code is converted into a **2-bit binary output**:
 
 ---
 
-## 🔷 Output Characteristics
+## Output Characteristics
 
 ### 1. Staircase Transfer Function
 
@@ -97,24 +97,22 @@ The ADC cannot represent all input values exactly.
 
 ---
 
-## 🔷 Resolution
+## Resolution
 
 Resolution is the smallest detectable change in input voltage.
 
 [
-\text{Resolution} = \frac{V_{max} - V_{min}}{2^n}
+Resolution = (Vmax − Vmin) / (2ⁿ)
 ]
 
 For a 2-bit ADC:
 
-[
-2^2 = 4 \text{ levels}
-]
+2² = 4 levels
 
 Example (0–5 V range):
 
 [
-\text{Resolution} = \frac{5}{4} = 1.25\text{ V}
+Resolution = 5 ÷ 4 = 1.25 V
 ]
 
 So:
@@ -124,12 +122,12 @@ So:
 
 ---
 
-## 🔷 Quantization Error
+## Quantization Error
 
 Since the output is discrete:
 
 [
-\text{Maximum error} = \pm \frac{\text{Resolution}}{2}
+Maximum error <= Resolution / 2
 ]
 
 For this ADC:
@@ -138,7 +136,7 @@ For this ADC:
 
 ---
 
-## 🔷 Key Observations
+## Key Observations
 
 * Flash ADC uses **parallel comparators → very fast**
 * Output is a **quantized staircase approximation**
@@ -147,8 +145,9 @@ For this ADC:
 
 ---
 
-## 🔷 Conclusion
+## Conclusion
 
 The 2-bit flash ADC successfully converts an analog input into one of four digital levels using parallel comparison. While simple and fast, its low resolution results in coarse approximation. Proper comparator design (e.g., hysteresis) is essential for stable operation.
 
 ---
+
