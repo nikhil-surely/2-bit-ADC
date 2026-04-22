@@ -1,4 +1,4 @@
-# 2-Bit Flash ADC – Behavior Analysis
+# 2-Bit Flash ADC – Behaviour Analysis
 
 ---
 
