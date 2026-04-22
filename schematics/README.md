@@ -76,18 +76,6 @@ The ADC produces a **step-like (quantized) output**:
 * Continuous input → discrete output levels
 * The output changes only when ( V_{in} ) crosses a threshold
 
-```
-Output
- 11 ────────
-    │
- 10 ────────
-    │
- 01 ────────
-    │
- 00 ────────
-      Vin →
-```
-
 ---
 
 ### 2. Time-Domain Behavior
